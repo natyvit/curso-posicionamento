@@ -1,0 +1,53 @@
+.menu {
+  background: #252525;
+  padding: 1.25rem 0;
+}
+
+.menu-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.menu-container::after,
+.menu-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+a.menu-logo {
+  display: block;
+  float: left;
+  margin-left: 0.625rem;
+}
+
+.menu-nav {
+  float: right;
+  margin-right: 0.625rem;
+}
+
+.menu-nav li {
+  display: inline-block;
+}
+
+.menu-nav a {
+  display: block;
+  padding: 0.625rem;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.125rem;
+}
+
+@media (max-width: 739px) {
+  .menu {
+    text-align: center;
+  }
+  a.menu-logo {
+    float: none;
+    margin: 0 auto;
+  }
+  .menu-nav {
+    float: none;
+    clear: both;
+  }
+}

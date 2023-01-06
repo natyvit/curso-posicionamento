@@ -1,0 +1,40 @@
+.newslatter {
+  background: #e7e4d8;
+  padding: 1.875rem 0;
+}
+
+.newslatter h2 {
+  font-size: 2.25rem;
+}
+
+.newslatter p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.newslatter form label {
+  display: none;
+}
+
+.newslatter input {
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  width: calc(100% - 140px);
+  padding: .625rem;
+  float: left;
+}
+
+.newslatter button {
+  background: #252525;
+  border: none;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  width: 140px;
+  padding: .8125rem 0;
+}

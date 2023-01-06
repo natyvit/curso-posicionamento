@@ -1,0 +1,87 @@
+.newslatter {
+  background: #e7e4d8;
+  padding: 1.875rem 0;
+}
+
+.newslatter-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.newslatter-container::after,
+.newslatter-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.newslatter-info {
+  width: 460px;
+  margin: 0 0.625rem;
+  float: left;
+}
+
+.newslatter h2 {
+  font-size: 2.25rem;
+}
+
+.newslatter p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+.newslatter form {
+  width: 460px;
+  margin: 0.625rem 0.625rem 0 0.625rem;
+  float: left;
+}
+
+.newslatter form label {
+  display: none;
+}
+
+.newslatter input {
+  width: 320px;
+  border: 3px solid #252525;
+  background: none;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: Georgia, serif;
+  padding: 0.625rem;
+  float: left;
+}
+
+.newslatter button {
+  background: #252525;
+  border: none;
+  font-family: Georgia, serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: 140px;
+  padding: 0.8125rem 0;
+  color: white;
+  cursor: pointer;
+}
+
+@media (min-width: 740px) and (max-width: 980px) {
+  .newslatter-container {
+    max-width: 720px;
+  }
+  .newslatter-info,
+  .newslatter form,
+  .newslatter input {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .newslatter-container {
+    max-width: 300px;
+  }
+  .newslatter-info,
+  .newslatter form,
+  .newslatter input {
+    width: 300px;
+    margin: 0.625rem 0 0 0;
+  }
+}

@@ -1,0 +1,43 @@
+.footer {
+  background: #d6d3c8;
+  padding: 2.5rem 0;
+}
+
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.footer-container::after,
+.footer-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer p {
+  float: left;
+  margin: 0 0.625rem;
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+.footer img {
+  float: right;
+  margin: 0 0.625rem;
+  display: block;
+}
+
+@media (max-width: 739px) {
+  .footer-container {
+    max-width: 300px;
+  }
+  .footer p {
+    float: none;
+    margin: 0;
+  }
+  .footer img {
+    float: none;
+    margin: 1.25rem 0;
+  }
+}

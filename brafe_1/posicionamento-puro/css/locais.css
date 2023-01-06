@@ -1,0 +1,72 @@
+.locais {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+}
+
+.locais-item {
+  clear: both;
+  margin: 3.75rem auto;
+}
+
+.locais-item::after,
+.locais-item::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.locais-item img {
+  width: 460px;
+  display: block;
+  float: left;
+  margin: 0 0.625rem;
+}
+
+.locais-item > div {
+  width: 460px;
+  float: left;
+  margin: 0 0.625rem;
+}
+
+.locais-item h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.locais-item p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  max-width: 320px;
+  margin-bottom: 2.5rem;
+}
+
+.locais-item a {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 3px solid;
+  color: #252525;
+  padding: 0.625rem 1.25rem;
+}
+
+@media (max-width: 740px) and (max-width: 980px) {
+  .locais {
+    max-width: 720px;
+  }
+  .locais-item > div,
+  .locais-item img {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .locais {
+    max-width: 300px;
+  }
+  .locais-item > div,
+  .locais-item img {
+    width: 300px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,367 @@
+/* Reset */
+
+body, h1, h2, h3, p, ul {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	font-family: Georgia, serif;
+	color: #252525;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container{
+	display: flex;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+@media (max-width: 739px) {
+	.container{
+		flex-direction: column;
+		max-width: 300px;
+	}
+}
+
+/* Menu */
+
+.menu {
+	background: #252525;
+	padding: 1.25rem 0;
+}
+
+.menu-nav{
+	flex: 1;
+	margin: 0 .625rem;
+	align-self: center;
+}
+
+.menu-logo{
+	margin: 0 .625rem;
+}
+
+.menu-nav a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.125em;
+}
+
+.menu-nav ul {
+	float: right;
+	display: flex;
+	list-style: none;
+}
+
+.menu-nav ul li a {
+	padding: .625rem;
+}
+
+@media (max-width: 739px) {
+	.menu-nav,
+	.menu-logo {
+		margin: 0;
+	}
+	.menu-nav ul li a{
+		padding-left: 0;
+	}
+}
+
+/* Intro */
+
+.intro {
+	background: url('../img/bg-intro.jpg') no-repeat center center;
+	background-size: cover;
+	color: #fff;
+	padding: 9.375rem 0;
+	text-align: center;
+}
+
+.intro h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+.intro h1::after {
+	content: '';
+	display: block;
+	width: 20px;
+	height: 4px;
+	background: #fff;
+	margin: .625rem auto;
+}
+
+.intro p {
+	font-style: italic;
+	font-size: 1.125em;
+}
+
+@media (max-width: 739px) {
+	.intro{
+		padding: 3.75rem 0;
+	}
+}
+
+/* Sobre */
+
+.sobre{
+	padding: 3.75rem 0;
+}
+
+.sobre h2 {
+	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 3.75rem;
+}
+
+.sobre-item {
+	flex: 1;
+	margin: 0 .625rem;
+}
+
+.sobre-item img{
+	display: block;
+	max-width: 100%;
+}
+
+.sobre-item h3 {
+	font-size: 2.25em;
+	line-height: 1em;
+	background: #252525;
+	color: #fff;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+	position: relative;
+	width: 220px;
+	padding: .3125rem 0 .625rem 0;
+	top: -25px;
+}
+
+.sobre > p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	font-style: italic;
+	margin: 1.25rem auto;
+	max-width: 460px;
+	text-align: center;
+}
+
+@media (max-width: 739px) {
+	.sobre-item{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/* Produtos */
+
+.produtos {
+	background: #e7e4d8;
+	border-top: 3px solid #d6d3c8;
+	border-bottom: 3px solid #d6d3c8;
+	padding: 3.75rem 0;
+}
+
+.produtos-item{
+	flex: 1;
+	margin: 0 .625rem 2.5rem .625rem;
+}
+
+.produtos-item h2 {
+	font-size: 2.25em;
+	text-align: center;
+	margin-bottom: 1.25rem;
+}
+
+.produtos-item h2::before {
+	content: '';
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: currentColor;
+	border-radius: 50%;
+	border: 5px solid #e7e4d8;
+	box-shadow: 0 0 0 5px currentColor;
+	margin: 1.25rem auto;
+}
+
+h2.produtos-paulista::before {
+	color: #492901;
+}
+
+h2.produtos-carioca::before {
+	color: #c17139;
+}
+
+h2.produtos-mineiro::before {
+	color: #d7a54d;
+}
+
+.produtos-item p {
+	font-size: 0.875em;
+	line-height: 1.4em;
+}
+
+.produtos-btn {
+	display: block;
+	width: 180px;
+	padding: .9375rem 0;
+	margin: 1.25rem auto;
+	border: 3px solid #252525;
+	color: #252525;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.125em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+@media (max-width: 739px) {
+	.produtos-item{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/* Locais */
+
+.locais{
+	padding: 3.75rem 0;
+}
+
+.locais-item {
+	margin-bottom: 2.5rem;
+}
+
+.locais-img, .locais-info{
+	flex: 1;
+	margin: 0 .625rem;
+}
+
+.locais-img img{
+	display: block;
+	max-width: 100%;
+}
+
+.locais-item h2 {
+	font-size: 2.25em;
+}
+
+.locais-item p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	max-width: 320px;
+	margin-bottom: 2.5rem;
+}
+
+.locais-item a {
+	font-size: 1.125em;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: 3px solid;
+	color: #252525;
+	padding: .625rem 1.25rem;
+}
+
+@media (max-width: 739px) {
+	.locais-img,
+	.locais-info {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/* NewsLatter */
+
+.newslatter {
+	background: #e7e4d8;
+	padding: 1.875rem 0;
+}
+
+.newslatter-info {
+	flex: 1;
+	margin: 0 .625rem;
+}
+
+.newslatter-info h2 {
+	font-size: 2.25em;
+}
+
+.newslatter-info p {
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+.newslatter form{
+	flex: 1;
+	margin: 0 .625rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+.newslatter form label {
+	display: none;
+}
+
+.newslatter input {
+	flex: 1;
+	align-self: flex-start;
+	padding: .625rem;
+	border: 3px solid #252525;
+	background: none;
+	font-size: 1.5em;
+	font-style: italic;
+	font-family: Georgia, serif;
+}
+
+.newslatter button {
+	flex: 1;
+	align-self: flex-start;
+	padding: .8125rem;
+	background: #252525;
+	border: none;
+	font-family: Georgia, serif;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	color: #fff;
+	cursor: pointer;
+}
+
+@media (max-width: 739px) {
+	.newslatter-info{
+		margin: 0 0 1.25rem 0;
+	}
+	.newslatter form{
+		margin: 0;
+	}
+}
+
+/*Footer*/
+
+.footer {
+	background: #d6d3c8;
+	padding: 2.5rem 0;
+}
+
+.footer p {
+	font-size: 1.125em;
+	line-height: 1.4em;
+	margin: 0 .625rem;
+	flex: 1;
+}
+
+.footer-img {
+	margin: 0 .625rem;
+}
+
+@media (max-width: 739px) {
+	.footer-img,
+	.footer p {
+		margin: .625rem 0;
+	}
+}

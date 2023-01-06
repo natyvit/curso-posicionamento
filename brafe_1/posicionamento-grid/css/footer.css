@@ -1,0 +1,20 @@
+.footer {
+  background: #d6d3c8;
+  padding: 2.5rem 0;
+}
+
+.footer img{
+  float: right;
+}
+
+.footer p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 739px) {
+  .footer img{
+    float: none;
+    margin-top: 1.25rem;
+  }
+}

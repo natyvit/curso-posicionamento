@@ -1,0 +1,74 @@
+.sobre {
+  padding: 3.75rem 0;
+}
+
+.sobre-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.sobre-container::after,
+.sobre-container::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.sobre h2 {
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 3.75rem;
+}
+
+.sobre-item {
+  width: 460px;
+  float: left;
+  margin: 0 0.625rem;
+}
+
+.sobre-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.sobre-item h3 {
+  font-size: 2.25rem;
+  line-height: 1;
+  background: #252525;
+  width: 220px;
+  color: white;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  padding: 5px 0 10px 0;
+  top: -25px;
+  position: relative;
+}
+
+.sobre > p {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-style: italic;
+  text-align: center;
+  margin: 1.25rem auto;
+  max-width: 460px;
+}
+
+@media (max-width: 740px) and (max-width: 980px) {
+  .sobre-container {
+    max-width: 720px;
+  }
+  .sobre-item {
+    width: 340px;
+  }
+}
+
+@media (max-width: 739px) {
+  .sobre-container {
+    max-width: 300px;
+  }
+  .sobre-item {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
